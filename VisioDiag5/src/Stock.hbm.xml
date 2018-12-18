@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.hibernateMapping.Stock" table="Stock">
+
+		<id name="StockId" column="StockId" />
+		<property name="StockName" column="StockName" length="10" />
+
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+<class name="com.hibernateMapping.Manager" table="Manager">
+
+<id name="Mid" column="Mid"  />
+<property name="Mname" column="Mname" length="10"/>
+
+<set name="children" cascade="all" >    <!-- all operations at parent object will be transfer to child -->
+
+<key column="forevenId" />
+<one-to-many class="com.hibernateMapping.Candidate" />
+
+</set>
+
+</class>
+</hibernate-mapping>

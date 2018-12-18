@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.hibernateMapping.Accountant" table="Accountant">
+
+		<id name="AccountantId" column="AccountantId" />
+		<property name="AccountantName" column="AccountantName"
+			length="11" />
+
+		<many-to-one name="parentObjects" column="Accountdummy"
+			class="com.hibernateMapping.Account" cascade="all" />
+
+	</class>
+</hibernate-mapping>

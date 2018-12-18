@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.hibernateMapping">
+	<class name="Publisher" table="Publisher">
+
+		<id name="PublisherId" column="PublisherId">
+			<generator class="foreign">
+				<param name="property">b</param>
+			</generator>
+		</id>
+      <property name="PublisherName" column="PublisherName" length="25" />
+      
+      <one-to-one name="b" class="Book" cascade="all" />
+
+	</class>
+</hibernate-mapping>

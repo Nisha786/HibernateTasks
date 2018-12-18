@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.hibernateMapping.Category" table="Category">
+
+		<id name="categoryId" column="categoryId" />
+		<property name="name" column="name" length="25" />
+
+		<set name="Stocks" cascade="all" table="Stocks_Categories">
+
+			<key column="category_Id" />
+			<many-to-many class="com.hibernateMapping.Stock" column="stock_Id" />
+
+		</set>
+	</class>
+</hibernate-mapping>

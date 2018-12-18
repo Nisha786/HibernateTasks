@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.hibernateMapping.Product" table="Product" >
+	<id name="productid" column="productid">
+		<generator class="increment" />
+	</id>
+	<property name="proname" column="proname" />
+	<property name="price" column="price" />
+	<filter name="proname" condition="proname like '%c%'"></filter>
+	<filter name="priceFilter" condition="price >= price"></filter>
+</class>
+	<filter-def name="proname" />
+	<filter-def name="priceFilter">
+		<filter-param name="price" type="int" />
+	</filter-def>
+</hibernate-mapping>

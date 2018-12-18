@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.hibernateMapping.Professor" table="Professor">
+
+		<id name="Pid" column="Pid" />
+		<property name="Pname" column="Pname" length="25" />
+		<property name="forevenId" column="forevenId" insert="false" />
+
+		<many-to-one name="parentObjects" column="DDummy"
+			cascade="all" />
+
+	</class>
+</hibernate-mapping>

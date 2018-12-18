@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.hibernateMapping">
+	<class name="Location" table="Location">
+
+		<id name="Lid" column="Lid" />
+		<property name="Lname" column="Lname" length="25" />
+
+		<set name="Schools" inverse="false" cascade="all" table="School_Locations">
+
+			<key column="L_id" />
+			<many-to-many class="School"
+				column="S_id " />
+
+		</set>
+
+	</class>
+</hibernate-mapping>

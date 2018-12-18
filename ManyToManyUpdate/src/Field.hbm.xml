@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.hibernateMapping.Field" table="Field">
+
+		<id name="FieldId" column="FieldId" />
+		<property name="FieldName" column="FieldName" length="25" />
+
+		<set name="Engineers" cascade="all" table="Engineers_Fields">
+          <key column="Fields_Id" />
+			<many-to-many class="com.hibernateMapping.Engineer" column="Engineer_Id " />
+          </set>
+
+	</class>
+</hibernate-mapping>

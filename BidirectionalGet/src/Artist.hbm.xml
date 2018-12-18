@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.hibernateMapping.Artist" table="Artist">
+
+		<id name="ArtistId" column="ArtistId" />
+		<property name="ArtistName" column="ArtistName" length="25" />
+
+		<set name="children" cascade="all" inverse="true"> <!-- inverse intimates bidirectional opeation -->
+
+			<key column="forevenid" />
+			<one-to-many class="com.hibernateMapping.Song" />
+
+		</set>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.hibernateMapping.Movie" table="Movie">
+
+		<id name="MovieId" column="MovieId" />
+		<property name="MovieName" column="MovieName"
+			length="25" />
+        <property name="forevenId" column="forevenId"  insert="false" />
+        
+		<many-to-one name="parentObjects" column="PersonDummy" cascade="all" />
+
+	</class>
+</hibernate-mapping>

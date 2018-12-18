@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Hibernate"/>
+	<classpathentry kind="lib" path="C:/Program Files/Hibernate Jar/hibernate-distribution-3.6.10.Final/lib/required/slf4j-api-1.6.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Hibernate Jar/hibernate-distribution-3.6.10.Final/lib/required/jta-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Hibernate Jar/hibernate-distribution-3.6.10.Final/lib/required/javassist-3.12.0.GA.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Hibernate Jar/hibernate-distribution-3.6.10.Final/lib/jpa/hibernate-jpa-2.0-api-1.0.1.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Hibernate Jar/hibernate-distribution-3.6.10.Final/slf4j-simple-1.7.25.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Hibernate Jar/hibernate-distribution-3.6.10.Final/jar_files_2/antlr-2.7.6.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Hibernate Jar/hibernate-distribution-3.6.10.Final/jar_files_2/backport-util-concurrent-3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Hibernate Jar/hibernate-distribution-3.6.10.Final/jar_files_2/commons-collections-3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Hibernate Jar/hibernate-distribution-3.6.10.Final/jar_files_2/commons-logging-1.0.4.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Hibernate Jar/hibernate-distribution-3.6.10.Final/jar_files_2/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Hibernate Jar/hibernate-distribution-3.6.10.Final/jar_files_2/ehcache-1.5.0.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Hibernate Jar/hibernate-distribution-3.6.10.Final/jar_files_2/hibernate-core-3.5.3-Final.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Hibernate Jar/hibernate-distribution-3.6.10.Final/jar_files_2/hibernate-ehcache-3.5.3-Final.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Hibernate Jar/hibernate-distribution-3.6.10.Final/jar_files_2/jsr107cache-1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Hibernate Jar/hibernate-distribution-3.6.10.Final/jar_files_2/jta-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Hibernate Jar/hibernate-distribution-3.6.10.Final/jar_files_2/slf4j-api-1.5.8.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Hibernate Jar/hibernate-distribution-3.6.10.Final/jar_files_2/xml-apis-1.0.b2.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/MySQL/com.mysql.jdbc_5.1.5.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/MySQL/slf4j-nop-1.7.25.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

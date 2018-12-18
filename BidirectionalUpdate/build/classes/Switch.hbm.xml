@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.hibernateMapping.Switch" table="Switch">
+
+		<id name="Sid" column="Sid" />
+		<property name="Sname" column="Sname" length="25" />
+		<property name="forevenId" column="forevenId" insert="false" />
+
+		<many-to-one name="parentObjects" column="EDummy"
+			cascade="all" />
+
+	</class>
+</hibernate-mapping>

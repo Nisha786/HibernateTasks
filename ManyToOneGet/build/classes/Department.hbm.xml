@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.hibernateMapping.Department" table="Department">
+
+		<id name="DepartmentId" column="DepartmentId" />
+		<property name="DepartmentName" column="DepartmentName" length="10" />
+
+		<many-to-one name="parentObjects" column="Departmentdummy"
+			class="com.hibernateMapping.Company" cascade="all" />
+
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.hibernateMapping">
+	<class name="School" table="School">
+
+		<id name="Sid" column="Sid" />
+		<property name="Sname" column="Sname" length="25" />
+
+		<set name="Locations" cascade="all" table="School_Locations">
+
+			<key column="S_id" />
+			<many-to-many class="Location"
+				column="L_id" />
+
+		</set>
+	</class>
+</hibernate-mapping>

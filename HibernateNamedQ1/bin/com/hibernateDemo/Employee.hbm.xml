@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.hibernateDemo">
+	<class name="Employee" table="EMPLOYEE">
+		<id name="id">
+			<column name="ID" />
+			<generator class="assigned" />
+		</id>
+		<property name="firstName" column="FIRSTNAME">
+		</property>
+		<property name="lastName" column="LASTNAME">
+		</property>
+	</class>
+        <sql-query name="MyName">
+	<![CDATA[select * from Employee]]> 
+	
+	<!-- <![CDATA[from EmployeeN e where e.id = :id]]> -->
+
+	 <!-- <![CDATA[from EmployeeN where firstName like :firstName]]> -->
+	 
+	<!-- <![CDATA[from EmployeeN where firstName = :firstName and lastName = :lastName]]> -->
+	
+	<!--  <![CDATA[select * from Employee order by firstName]]>   -->
+	
+	<!-- <![CDATA[from EmployeeN where firstName = :firstName or lastName = :lastName]]> -->
+	
+	  
+	</sql-query>
+</hibernate-mapping>
